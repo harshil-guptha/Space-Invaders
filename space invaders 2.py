@@ -8,7 +8,7 @@ from pygame import gfxdraw
 from pygame.locals import *
 
 def print_text(surface, font, text, surf_rect, x = 0, y = 0, center = False,\
-               color = (255, 255, 255)):
+               color = (200, 255, 255)):
     """
     Draws text onto a surface. If center, text is centered on screen at y
     """
@@ -115,7 +115,7 @@ def draw_invader(backbuffer, rect, a, b, animate_invaders, ticks,\
     # left eye
     pygame.gfxdraw.filled_circle(backbuffer, rect.x + 6, rect.y + 4, 3, \
                                  BLACK)
-    #right eye
+
     pygame.gfxdraw.filled_circle(backbuffer, rect.x + invader_width - 7,\
                                  rect.y + 4, 3, BLACK)
     # left antennae
@@ -195,13 +195,13 @@ pygame.time.set_timer(invader_shoot, INV_SHOOT_FREQ)
 pygame.time.set_timer(bonus, BONUS_FREQ)
 
 # colors
-BLACK = (0,0,0)
-WHITE = (255,255,255)
-RED = (255,0,0)
-GREEN = (0,255,0)
-BLUE = (0,0,255)
-YELLOW = (255,255,0)
-DIMGRAY = (105,105,105)
+BLACK = (0,250,0)
+WHITE = (0,0,0)
+RED = (250,250,250)
+GREEN = (0,250,250)
+BLUE = (250,250,250)
+YELLOW = (0,0,250)
+DIMGRAY = (0,250,250)
 
 shots, invader_shots, inv_shot_colors, bonus_invaders = [], [], [], []
 
